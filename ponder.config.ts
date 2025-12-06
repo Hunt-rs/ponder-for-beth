@@ -1,6 +1,6 @@
 import { createConfig } from "ponder";
 
-import { ExampleContractAbi } from "./abis/ExampleContractAbi";
+import { BethContractAbi } from "./abis/BethContractAbi";
 
 export default createConfig({
   chains: {
@@ -10,11 +10,15 @@ export default createConfig({
     },
   },
   contracts: {
-    ExampleContract: {
+    Beth: {
       chain: "mainnet",
-      abi: ExampleContractAbi,
-      address: "0x0000000000000000000000000000000000000000",
-      startBlock: 1234567,
+      abi: BethContractAbi,
+      address: "0x2cb662Ec360C34a45d7cA0126BCd53C9a1fd48F9",
+      startBlock: 23226197,
     },
   },
+  database: {
+    kind: "postgres",
+    connectionString: process.env.DATABASE_URL!,
+  }
 });
