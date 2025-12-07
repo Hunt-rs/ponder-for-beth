@@ -7,7 +7,9 @@ npm install
 cp .env.example .env
 ```
 
-- Then fill the `.env` file with your RPC (Infura / Alchemy) and URL to your database
+- Setup your Postgres database
+
+- Then fill the `.env` file with your RPC (Infura / Alchemy) and URL to your Postgres database
 
 ## Run
 
