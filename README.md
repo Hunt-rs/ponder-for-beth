@@ -3,6 +3,7 @@
 ```bash
 git clone https://github.com/Hunt-rs/ponder-for-beth
 cd ponder-for-beth
+npm install
 cp .env.example .env
 ```
 
